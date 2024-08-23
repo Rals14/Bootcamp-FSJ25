@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --fuenteTextos: 'Roboto', sans-serif;
+    --fuenteTitulos: 'Maven Pro', sans-serif;
+
+    --principal: #AE3540;
+    --principalOscuro: #7a262e;
+    --gris: #343334;
+    --blanco: #F1F1F1;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--fuenteTextos);
+}
+/* 1 rem = 10px*/
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* Aux */
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+
+
+}
+
+/*header top*/
+
+/*Siman logo*/
+.header .header__siman{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;   
+    background-color: var(--principal);
+
+}
+
+.header .header__siman img{
+    width: 15rem;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+/*Searchbar*/
+.header .header__siman .searchbar-section{
+    display: flex;
+    justify-content: left;
+    background-color: var(--principalOscuro);
+    border-radius: 2rem;
+    height: 5vh;
+    margin-top: 0.8rem;
+}
+.header .header__siman .searchbar-section .searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.header .header__siman .searchbar-section .searchbar input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--principalOscuro);
+    color: whitesmoke;
+    font-size: 1.6rem;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:active{
+        outline: none;
+    }
+}
+
+.header .header__siman .searchbar-section .searchbar .searchbar__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vh;
+} 
+
+.header .header__siman .searchbar-section .searchbar .searchbar__logo:hover{
+    color: var(--principal);
+}
+
+/* User */
+
+.header .header__siman .user-section{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    gap: 1.5rem;
+}
+
+.header .header__siman .user-section .user__icon{
+    font-size: 2.5rem;
+}
+
+.header .header__siman .user-section a:hover{
+    color: var(--principalOscuro);
+}
+/*Icons*/
+
+.header .header__siman .user-section .user__icon{
+    color: white;
+    font-size: 3rem;
+}
+
+.header .header__siman .user-section .cart__icon{
+    color: white;
+    font-size: 2.5rem;
+}
+
+/*Header navbar*/
+
+.header .header__navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blanco);
+    height: 6vh;
+}
+
+.header .header__navbar a{
+    color: black;
+}
+
+.header .header__navbar a:hover{
+    color: var(--principal);
+}
+
+/* Services */
+.header .header__navbar .services-section{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+
+
+/*Navbar*/
+
+.header .header__navbar .navbar-section{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header .header__navbar .navbar-section .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+}
+
+/*Main content*/
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.main-content .products-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*Product*/
+.main-content .products-section .banner-section .banner-section__img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .products-section .banner-section .banner-section__img-div img{
+    width: 90%;
+    border-radius: 2rem;
+}
+
+/*Fashion*/
+
+@media (min-width: 768px){
+    .main-content .products-section .fashion-section .fashion-section__div{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .main-content .products-section .fashion-section .fashion-section__div .woman-div{
+        grid-row: 2/3;
+    }
+
+}
+
+.main-content .products-section .fashion-section .fashion-section__div .fashion-section__div__img-container img{
+    width: 100%;
+    border-radius: 2.5rem;
+}
