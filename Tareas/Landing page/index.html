@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siman</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -72,23 +73,23 @@
             <!-- Fashion -->
             <section class="fashion-section">
                 <div class="fashion-section__div">
-                    <div class="fashion-section__div__img-container .woman-div">
+                    <div class="img-container woman-div">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/2c2e188a-cdc6-430d-947c-aca0937c05e9___65d4392fd05244daf8a3d61369914221.jpg"
                             alt="imagen promoción ropa para mujeres">
                     </div>
-                    <div class="fashion-section__div__img-container man-div">
+                    <div class="img-container man-div">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/f10524b8-580a-4997-8a51-ec3015e5bf3a___a9a842217167ff6da36e0ca2ac17f0ca.jpg"
                             alt="imagen moda para hombres">
                     </div>
-                    <div class="fashion-section__div__img-container baby-div">
+                    <div class="img-container baby-div">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/b422ae7f-3053-47d0-925e-e6a64ce83de2___fbb8b18a963090ee5fabb822586f53bd.jpg"
                             alt="imagen moda para bebés">
                     </div>
-                    <div class="fashion-section__div__img-container child-div">
+                    <div class="img-container child-div">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/f9de79ca-95e5-44ab-ade7-677cdba7feca___f54e126f45a51fed58c25a4fc450e069.jpg"
                             alt="imagen moda para niños">
                     </div>
-                    <div class="fashion-section__div__img-container accesories.div">
+                    <div class="img-container accesories.div">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/3a8c7461-76eb-4093-93df-0ace775b9b62___801249c61015a24455a48097e7885694.jpg"
                             alt="imagen accesorios">
                     </div>
@@ -101,117 +102,156 @@
                 <div class="discount-section__title">
                     <h2>Hasta 50% de descuento en productos seleccionados</h2>
                 </div>
-                <!--product container-->
-                <div class="product-container">
-                    <img src="https://siman.vtexassets.com/arquivos/ids/5379550-1600-auto?v=638482917158430000&width=1600&height=auto&aspect=true"
-                        alt="Celular Samsung A15">
-                    <div class="product-container__info">
-                        <h3 class="product-container__info-brand">Samsung</h3>
-                        <h2 class="product-container__info-product">Celular Samsung A15 8GB RAM + 256GB ROM 5G</h2>
-                        <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
-                        <p class="product-container__info-price">$219.00</p>
-                        <p class="product-container__info-previousprice">$319.00</p>
-                        <div class="coutesy-container">
-                            <p class="product-container__info-coutesy">6 cuotas</p>
-                        </div>
-                        <div class="button-container">
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--product container-->
-                <div class="product-container">
-                    <img src="https://siman.vtexassets.com/arquivos/ids/5871897-1600-auto?v=638544266089270000&width=1600&height=auto&aspect=true"
-                        alt="Tablet Samsung S9 FE">
-                    <div class="product-container__info">
-                        <h3 class="product-container__info-brand">Samsung</h3>
-                        <h2 class="product-container__info-product">Tablet Samsung Galaxy Tab S9 FE 8GB RAM + 128GB ROM
-                        </h2>
-                        <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
-                        <p class="product-container__info-price">$559.00</p>
-                        <p class="product-container__info-previousprice">$829.00</p>
-                        <div class="coutesy-container">
-                            <p class="product-container__info-coutesy">6 cuotas</p>
-                        </div>
-                        <div class="button-container">
-                            <button>Agregar al carrito</button>
+                <div class="discount-section-container">
+                    <!--product container-->
+                    <div class="product-container">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/5379550-1600-auto?v=638482917158430000&width=1600&height=auto&aspect=true"
+                            alt="Celular Samsung A15">
+                        <div class="product-container__info">
+                            <div class="product-container__info-title">
+                                <h3 class="product-container__info-brand">Samsung</h3>
+                                <h2 class="product-container__info-product">Celular Samsung A15 8GB RAM + 256GB ROM 5G
+                                </h2>
+                            </div>
+                            <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
+                            <p class="product-container__info-price">$219.00</p>
+                            <p class="product-container__info-previousprice">$319.00</p>
+                            <div class="coutesy-container">
+                                <p class="product-container__info-coutesy">6 cuotas</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Agregar al carrito</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--product container-->
-                <div class="product-container">
-                    <img src="https://siman.vtexassets.com/arquivos/ids/5980838-1600-auto?v=638575094671830000&width=1600&height=auto&aspect=true"
-                        alt="Smartwatch Samsung Galaxy watch FE">
-                    <div class="product-container__info">
-                        <h3 class="product-container__info-brand">Samsung</h3>
-                        <h2 class="product-container__info-product">Smartwatch Samsung Galaxy watch FE 40mm</h2>
-                        <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
-                        <p class="product-container__info-price">$169.00</p>
-                        <p class="product-container__info-previousprice"></p>
-                        <div class="coutesy-container">
-                            <p class="product-container__info-coutesy">6 cuotas</p>
-                        </div>
-                        <div class="button-container">
-                            <button>Agregar al carrito</button>
+                    <!--product container-->
+                    <div class="product-container">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/5871897-1600-auto?v=638544266089270000&width=1600&height=auto&aspect=true"
+                            alt="Tablet Samsung S9 FE">
+                        <div class="product-container__info">
+                            <div class="product-container__info-title">
+                                <h3 class="product-container__info-brand">Samsung</h3>
+                                <h2 class="product-container__info-product">Tablet Samsung Galaxy Tab S9 FE 8GB RAM +
+                                    128GB
+                                    ROM
+                                </h2>
+                            </div>
+                            <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
+                            <p class="product-container__info-price">$559.00</p>
+                            <p class="product-container__info-previousprice">$829.00</p>
+                            <div class="coutesy-container">
+                                <p class="product-container__info-coutesy">6 cuotas</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Agregar al carrito</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--product container-->
-                <div class="product-container">
-                    <img src="https://siman.vtexassets.com/arquivos/ids/4883862-1600-auto?v=638344663595430000&width=1600&height=auto&aspect=true"
-                        alt="Audífono Galaxy buds FE">
-                    <div class="product-container__info">
-                        <h3 class="product-container__info-brand">Samsung</h3>
-                        <h2 class="product-container__info-product">Audífono TWS Galaxy buds FE gris</h2>
-                        <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
-                        <p class="product-container__info-price">$85.00</p>
-                        <p class="product-container__info-previousprice">$89.00</p>
-                        <div class="coutesy-container">
-                            <p class="product-container__info-coutesy"></p>
-                        </div>
-                        <div class="button-container">
-                            <button>Agregar al carrito</button>
+                    <!--product container-->
+                    <div class="product-container">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/5980838-1600-auto?v=638575094671830000&width=1600&height=auto&aspect=true"
+                            alt="Smartwatch Samsung Galaxy watch FE">
+                        <div class="product-container__info">
+                            <div class="product-container__info-title">
+                                <h3 class="product-container__info-brand">Samsung</h3>
+                                <h2 class="product-container__info-product">Smartwatch Samsung Galaxy watch FE 40mm</h2>
+                            </div>
+                            <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
+                            <p class="product-container__info-price">$169.00</p>
+                            <p class="product-container__info-previousprice">$149.00</p>
+                            <div class="coutesy-container">
+                                <p class="product-container__info-coutesy">6 cuotas</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Agregar al carrito</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--product container-->
-                <div class="product-container">
-                    <img src="https://siman.vtexassets.com/arquivos/ids/6026561-1600-auto?v=638592427716430000&width=1600&height=auto&aspect=true"
-                        alt="Pantalla Samsung Crystal">
-                    <div class="product-container__info">
-                        <h3 class="product-container__info-brand">Samsung</h3>
-                        <h2 class="product-container__info-product">Pantalla Samsung Crystal 2024 LED smart 43" UHD/4K
-                        </h2>
-                        <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
-                        <p class="product-container__info-price">$349.00</p>
-                        <p class="product-container__info-previousprice">$429.00</p>
-                        <div class="coutesy-container">
-                            <p class="product-container__info-coutesy">6 cuotas</p>
-                        </div>
-                        <div class="button-container">
-                            <button>Agregar al carrito</button>
+                    <!--product container-->
+                    <div class="product-container">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/4883862-1600-auto?v=638344663595430000&width=1600&height=auto&aspect=true"
+                            alt="Audífono Galaxy buds FE">
+                        <div class="product-container__info">
+                            <div class="product-container__info-title">
+                                <h3 class="product-container__info-brand">Samsung</h3>
+                                <h2 class="product-container__info-product">Audífono TWS Galaxy buds FE gris</h2>
+                            </div>
+                            <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
+                            <p class="product-container__info-price">$85.00</p>
+                            <p class="product-container__info-previousprice">$89.00</p>
+                            <div class="coutesy-container">
+                                <p class="product-container__info-coutesy">6 cuotas</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Agregar al carrito</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    <!--product container-->
+                    <div class="product-container">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/6026561-1600-auto?v=638592427716430000&width=1600&height=auto&aspect=true"
+                            alt="Pantalla Samsung Crystal">
+                        <div class="product-container__info">
+                            <div class="product-container__info-title">
+                                <h3 class="product-container__info-brand">Samsung</h3>
+                                <h2 class="product-container__info-product">Pantalla Samsung Crystal 2024 LED smart 43"
+                                    UHD/4K
+                                </h2>
+                            </div>
+                            <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
+                            <p class="product-container__info-price">$349.00</p>
+                            <p class="product-container__info-previousprice">$429.00</p>
+                            <div class="coutesy-container">
+                                <p class="product-container__info-coutesy">6 cuotas</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--product container-->
+                    <div class="product-container">
+                        <img src="https://siman.vtexassets.com/arquivos/ids/5481830-1600-auto?v=638503501407800000&width=1600&height=auto&aspect=true"
+                            alt="Pantalla Samsung Crystal">
+                        <div class="product-container__info">
+                            <div class="product-container__info-title">
+                                <h3 class="product-container__info-brand">Samsung</h3>
+                                <h2 class="product-container__info-product">Cargador fast charger type-C con cable 25w
+                                    negro
+                                </h2>
+                            </div>
+                            <p class="product-container__info-sellby">Vendido por <span>Siman</span></p>
+                            <p class="product-container__info-price">$30.00</p>
+                            <p class="product-container__info-previousprice">$45.00</p>
+                            <div class="coutesy-container">
+                                <p class="product-container__info-coutesy">6 cuotas</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <!-- Home -->
             <section class="home-section">
                 <div class="home-section__content">
-                    <div class="home-section__content-img">
+                    <div class="img-container ">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/48914230-0141-48d2-947f-c6fecc9826e5___4656cde8e3c19d9707f398f24ff160c8.jpg"
                             alt="promociones de decoraciones">
                     </div>
-                    <div class="home-section__content-img">
+                    <div class="img-container ">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/f5819cc6-c14f-4158-80c2-ab9c5c218b5f___a68b70cef30f8531cae65b709698e819.jpg"
                             alt="promoción renueva tu hogar">
                     </div>
-                    <div class="home-section__content-img">
+                    <div class="img-container bed-principal-image">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/d8838170-030f-4c86-85e9-ae53482b7365___73cb4f959a15ccd8ce5fe38e48bab257.jpg"
                             alt="promociones en camas capri">
                     </div>
@@ -221,15 +261,15 @@
             <!-- Electronics -->
             <section class="electronics-section">
                 <div class="electronics-section__content">
-                    <div class="electronics-section__content-img">
+                    <div class="img-container audifonos-principal">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/b9195fe3-8dd9-40a7-86a5-38212228249f___29e3351cb1e6b1981a916dfd5396a228.jpg"
                             alt="promociones en audifonos">
                     </div>
-                    <div class="electronics-section__content-img">
+                    <div class="img-container">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/00596f33-5c06-4f91-ae9f-177b8d52ce54___b768796bf2c5197b5715743ffc6d741b.jpg"
                             alt="promoción laptop hp">
                     </div>
-                    <div class="electronics-section__content-img">
+                    <div class="img-container">
                         <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/c6124ee2-f4d2-43e7-9d83-95d917fe5a76___4897439b556a7ab31f5ff94d52241ba5.jpg"
                             alt="promociones de ventiladores">
                     </div>
@@ -240,99 +280,108 @@
         <!-- Information section-->
 
         <section class="info-section">
-
-            <!-- Suscribe-->
-            <section class="subscribe-section">
-                <div class="subscribe-section__logo">
-                    <img src="https://praderaconcepcion.com/wp-content/uploads/2022/08/LOGO-SIMAN.png" alt="siman logo">
-                </div>
-
-                <div class="subscribe-section__subscribe">
-                    <p>Suscribete para obtener mejores ofertas</p>
-                    <div class="subscribe-section__subscribe-email">
-                        <input type="email" placeholder="email">
-                        <button class="subscribe-button">Suscribirse</button>
-                    </div>
-                </div>
-
-                <div class="subscribe-section__contact">
-                    <p><span></span>2298-3777</p>
-                    <p>Mantente en contacto con nosotros</p>
-                    <div class="subscribe-section__contact-social">
-
+            <div class="info-section__content">
+                <!-- Suscribe-->
+                <section class="subscribe-section info-sections">
+                    <div class="subscribe-section__logo">
+                        <img src="https://praderaconcepcion.com/wp-content/uploads/2022/08/LOGO-SIMAN.png"
+                            alt="siman logo">
                     </div>
 
-                    <div class="subscribe-section__contact-downloads">
-                        <a href="#"><img
-                                src="https://siman.vtexassets.com/assets/vtex/assets-builder/siman.store-theme/10.0.14/icons-footer/google-play___eaddfe9b8ec0fbd896fbb0db51c98cef.svg"
-                                alt="Descargar en playstore"></a>
-                        <a href="#"><img
-                                src="https://siman.vtexassets.com/assets/vtex/assets-builder/siman.store-theme/7.0.1-beta.44/icons-footer/app-store___21dae961d8f8aa152fbc098b1112ab87.svg"
-                                alt="Descargar en appstore"></a>
+                    <div class="subscribe-section__subscribe">
+                        <p>Suscribete para obtener mejores ofertas</p>
+                        <div class="subscribe-section__subscribe-email">
+                            <input class="susbscribe-input" type="email" placeholder="email">
+                            <button class="subscribe-button">Suscribirse</button>
+                        </div>
                     </div>
-                </div>
 
-            </section>
+                    <div class="subscribe-section__contact">
+                        <p><span></span>2298-3777</p>
+                        <p>Mantente en contacto con nosotros</p>
+                        <div class="subscribe-section__contact-social">
 
-            <!-- Siman corporative -->
-            <section class="corporative-section">
-                <h2>Siman Corporativo</h2>
-                <a href="#">Quiénes Somos</a>
-                <a href="#">Visión y Misión</a>
-                <a href="#">Historia</a>
-                <a href="#">Sucursales</a>
-                <a href="#">Servicios</a>
-            </section>
+                        </div>
 
-            <!-- Programs -->
-            <section class="programs-section">
-                <h2>Programas</h2>
-                <a href="#">Monedero</a>
-                <a href="#">Certificados de Regalo</a>
-                <a href="#">Garantías</a>
-                <a href="#">Siman PRO</a>
-                <a href="#">Credisiman</a>
-                <a href="#">Marketplace</a>
-                <a href="#">Vende en Marketplace</a>
-            </section>
+                        <div class="subscribe-section__contact-downloads">
+                            <a href="#"><img
+                                    src="https://siman.vtexassets.com/assets/vtex/assets-builder/siman.store-theme/10.0.14/icons-footer/google-play___eaddfe9b8ec0fbd896fbb0db51c98cef.svg"
+                                    alt="Descargar en playstore"></a>
+                            <a href="#"><img
+                                    src="https://siman.vtexassets.com/assets/vtex/assets-builder/siman.store-theme/7.0.1-beta.44/icons-footer/app-store___21dae961d8f8aa152fbc098b1112ab87.svg"
+                                    alt="Descargar en appstore"></a>
+                        </div>
+                    </div>
 
-            <!-- Costumer services -->
-            <section class="costumer-section">
-                <h2>Servicio al cliente</h2>
-                <a href="#">Preguntas Frecuentes</a>
-                <a href="#">Política de devoluciones</a>
-                <a href="#">Contáctenos</a>
-                <a href="#">Seguridad del sitio</a>
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Condiciones ofertas</a>
-                <a href="#">Derecho de Retracto</a>
-                <a href="#">Condiciones de uso</a>
-                <a href="#">Términos y condiciones</a>
-            </section>
+                </section>
+
+                <section class="about-section ">
+                    <!-- Siman corporative -->
+                    <section class="corporative-section info-sections">
+                        <h2>Siman Corporativo</h2>
+                        <a href="#">Quiénes Somos</a>
+                        <a href="#">Visión y Misión</a>
+                        <a href="#">Historia</a>
+                        <a href="#">Sucursales</a>
+                        <a href="#">Servicios</a>
+                    </section>
+
+                    <!-- Programs -->
+                    <section class="programs-section info-sections">
+                        <h2>Programas</h2>
+                        <a href="#">Monedero</a>
+                        <a href="#">Certificados de Regalo</a>
+                        <a href="#">Garantías</a>
+                        <a href="#">Siman PRO</a>
+                        <a href="#">Credisiman</a>
+                        <a href="#">Marketplace</a>
+                        <a href="#">Vende en Marketplace</a>
+                    </section>
+
+                    <!-- Costumer services -->
+                    <section class="costumer-section info-sections">
+                        <h2>Servicio al cliente</h2>
+                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Política de devoluciones</a>
+                        <a href="#">Contáctenos</a>
+                        <a href="#">Seguridad del sitio</a>
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Condiciones ofertas</a>
+                        <a href="#">Derecho de Retracto</a>
+                        <a href="#">Condiciones de uso</a>
+                        <a href="#">Términos y condiciones</a>
+                    </section>
+                </section>
+            </div>
 
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
+        <section class="footer-container">
+            <!-- Payment methods -->
+            <section class="payment-methods-section footer-section">
+                <i class="bi bi-credit-card-2-back"></i>
+                <i class="bi bi-stripe"></i>
+                <i class="bi bi-wallet2"></i>
+                <i class="bi bi-paypal"></i>
+                <i class="bi bi-paypal"></i>
+            </section>
 
-        <!-- Payment methods -->
-        <section class="payment-methods-section">
+            <!-- Siman information -->
+            <section class="siman-information-section footer-section">
+                <p>Llámanos 2298-3777 - Almacenes Siman S.A. de C.V. - NIT: 0614–170266–001-3 Almacenes venta de
+                    diversos
+                    artículos - Paseo General Escalón, Centro Comercial Galerías, San Salvador. <a
+                        href="mailto:contacto@siman.com">contacto@siman.com</a></p>
+            </section>
 
+            <!-- Copyrights -->
+            <section class="copyrigths-section footer-section">
+                <p>Copyright © 2024 Almacenes Siman El Salvador. Reservados todos los derechos.</p>
+            </section>
         </section>
-
-        <!-- Siman information -->
-        <section class="siman-information-section">
-            <p>Llámanos 2298-3777 - Almacenes Siman S.A. de C.V. - NIT: 0614–170266–001-3 Almacenes venta de diversos
-                artículos - Paseo General Escalón, Centro Comercial Galerías, San Salvador. <a
-                    href="mailto:contacto@siman.com">contacto@siman.com</a></p>
-        </section>
-
-        <!-- Copyrights -->
-        <section class="copyrigths-section">
-            <p>Copyright © 2024 Almacenes Siman El Salvador. Reservados todos los derechos.</p>
-        </section>
-
     </footer>
 
 </body>
