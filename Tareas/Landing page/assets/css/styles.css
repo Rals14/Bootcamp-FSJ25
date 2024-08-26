@@ -76,6 +76,31 @@ a:hover {
 
 .img-container img:hover {
     cursor: pointer;
+    transform: scale(1.009);
+}
+
+.section__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title h2{
+    font-size: 2rem;
+}
+
+@media (min-width: 768px){
+    .section__title h2{
+        font-size: 2.7rem;
+    }
+    
+}
+
+.section__container{
+    background-color: var(--blanco);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    box-shadow: var(--gris) 0px 0px 2px;
 }
 
 /* Header */
@@ -291,13 +316,18 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+}
+
+.banner-section__img-div img:hover{
+    transform: scale(1.009);
 }
 
 .main-content .products-section .banner-section .banner-section__img-div img {
     width: 90%;
     border-radius: 2rem;
+    cursor: pointer;
 }
+
 
 /*Fashion*/
 
@@ -306,6 +336,7 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 0 5rem;
+    padding: 1rem 0rem;
 }
 
 .main-content .products-section .fashion-section .fashion-section__div .woman-div {
@@ -346,15 +377,6 @@ a:hover {
     margin: 0 5rem;
 }
 
-.discount-section__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.discount-section__title h2{
-    font-size: 1.5rem;
-}
 
 .main-content .products-section .discount-section-container {
     display: grid;
@@ -391,6 +413,15 @@ a:hover {
     justify-content: space-between;
     width: 100%;    
     cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+.product-container:hover {
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 5px var(--gris);
+    transition: 0.5s;
+
 }
 
 .product-container__info{
@@ -456,6 +487,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 0 2rem;
+    padding: 1rem 0rem;
 }
 
 .bed-principal-image{
@@ -491,6 +523,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 0 2rem;
+    padding: 1rem 0rem;
 }
 
 .audifonos-principal{
@@ -648,6 +681,15 @@ a:hover {
     margin: 1rem 0 0.5rem 0;
 }
 
+.footer-section a{
+    color: var(--blanco);
+    text-decoration: underline;
+}
+
+.footer-section a:hover{
+    color: var(--principal);
+}
+
 @media (min-width: 768px){
     .footer-container{
         flex-direction: row;
@@ -662,3 +704,87 @@ a:hover {
     font-size: 2rem;
     margin-top: 1rem;
 }
+
+
+/*About us page*/
+
+.about-us__title{
+    display: flex;
+    justify-content: flex-start;
+    margin: 3rem;
+}
+
+.about-us h1{
+    color: black;
+    font-size: 2.6rem;
+
+}
+
+.about-us h1 span{
+    text-transform: uppercase;
+
+}
+
+.abouts-us__img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+
+}
+
+.abouts-us__img-container img{
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.about-us-content{
+display: flex;
+flex-direction: column;
+margin: 1rem 2rem;
+gap: 2rem;
+}
+
+@media (min-width: 768px){
+    .about-us-content{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin: 1rem 2rem;
+    }
+    
+}
+
+.about-us-content__text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.5;
+}
+
+.about-us-content__text h2{
+    font-size: 2.5rem;
+    color: var(--principal);
+    margin-bottom: 2rem;
+    margin-top: 0;
+    
+}
+
+.about-us-content__text p{
+    font-size: 1.6rem;
+    color: var(--gris);
+    margin: 1rem 0;
+}
+
+.about-us-content__text li{
+    line-height: 3;
+    
+}
+
+.about-us-content__image img{
+    width: 100%;
+
+}
+
+/*Product page*/
+
