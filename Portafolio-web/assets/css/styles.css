@@ -6,11 +6,29 @@
     font-family: "Inconsolata", monospace !important;
 }
 
+a{
+    text-decoration: none !important;
+}
+
+
 /* Header Section */
+
+.header{
+    background-color: #2f3f8d;
+    box-shadow: 8px 5px 15px rgba(0,0,0,0.35);
+}
 
 .header .navbar .logo h2{
     font-size: 2.5em !important;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.header .navbar .logo h2:hover{
+    font-size: 2.6em !important;
+    transition: 0.3s;
+}
+
 .header .navbar .logo span{
     text-shadow: 2px 2px 3px #000;
 }
@@ -25,6 +43,12 @@
 .header .navbar .menu-navbar li a{
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+}
+
+.header .navbar .menu-navbar li a:hover{
+    font-size: large;
+    transition: 0.3s;
 }
 
 /* Main Section */
@@ -37,8 +61,20 @@
 }
 
 .main-content .img-container img{
-    width: 35vw;
+    width: 100%;
     gap: 2rem;
+}
+
+@media (min-width: 768px){
+    .main-content .img-container img{
+        width: 70%;
+    }    
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Boton */
@@ -51,8 +87,56 @@
 }
 
 .btn-outline-success:hover{
-    background-color:blueviolet !important;
-    color: black !important;
-    border-color: blueviolet !important;
+    background-color:black !important;
+    color: white !important;
+    border-color: black !important;
     transition: 0.5s;
+}
+
+/* Projects */
+
+/* Cards */
+
+@media (min-width: 768px) and (max-width: 992px){
+    .project-card h1{
+        font-size: 1.5em;
+    }    
+    
+}
+
+.project-card a{
+    color:black;
+}
+
+.project-card a:hover{
+    font-size: large;
+}
+
+.project-card:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: black !important;
+    color: white !important;
+    border-color: black !important;
+    transition: 0.5s;
+}
+
+/*Footer*/
+
+.footer-section{
+    background-color: #2f3f8d;
+    color: white;
+    box-shadow: 8px 5px 15px rgba(0,0,0,0.35);
+}
+
+.footer-section a{
+    color: white !important;
+    text-decoration: underline !important;
+}
+
+.footer-section a:hover{
+    font-size: large;
 }
