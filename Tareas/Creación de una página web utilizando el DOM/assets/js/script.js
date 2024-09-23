@@ -1,4 +1,4 @@
-/*Función para cambiar color de fondo*/
+/*Color change function*/
 const mainBoton = document.querySelector('#main-btn');
 mainBoton.addEventListener('click', () => {
     const mainContent = document.querySelector('#main-content');
@@ -12,7 +12,7 @@ mainBoton.addEventListener('click', () => {
 
 });
 
-/*Funcion para mostrar más de la review*/
+/*See more on reviews function*/
 const reviewBoton = document.querySelector('#review-btn');
 reviewBoton.addEventListener('click', () => {
     const extra = document.querySelector('.game-review-extra');
@@ -22,7 +22,7 @@ reviewBoton.addEventListener('click', () => {
     }    
 });
 
-/*Funcion para mostrar menos de la review*/
+/*See less on review function*/
 const reviewBotonExtra = document.querySelector('#review-btn-extra');
 reviewBotonExtra.addEventListener('click', () => {
     const extra = document.querySelector('.game-review-extra');
@@ -32,7 +32,7 @@ reviewBotonExtra.addEventListener('click', () => {
     }    
 });
 
-/*Funcion para cambiar imagen de review*/
+/*Change image function*/
 const reviewImg = document.querySelector('#game-review-img');
 let i = 1;
 reviewImg.addEventListener('click', () => {
@@ -43,7 +43,7 @@ reviewImg.addEventListener('click', () => {
     reviewImg.src = `./assets/img/zelda${i}.jpg`;
 });
     
-
+/*Subscribe form function*/
 const form = document.querySelector('#subscribe-form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
