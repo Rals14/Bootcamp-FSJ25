@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>Blog de Videojuegos</h1>
         <nav>
             <ul>
@@ -26,22 +26,38 @@
         <section class="main-content main-content-background" id="main-content">
             <h1>Bienvenido a nuestro blog de videojuegos</h1>
             <p>Explora las últimas noticias, reviews y contenido relacionado con el mundo de los videojuegos.</p>
-            <button class="main-btn" id="main-btn">Cambiar color de fondo</button>
+            <button class="main-btn default-btn" id="main-btn">Cambiar color de fondo</button>
         </section>
         <section class="content">
             <article class="game-review">
                 <h2>The Legend of Zelda Ocarina of Time</h2>
-                <img src="img/game-review.jpg" alt="Imagen de la review">
-                <div class="content-info">
+                <img src="./assets/img/zelda1.jpg" alt="Imagen de la review" id="game-review-img">
+                <div class="game-info">
                     <p>La saga de zelda consta de una gran fama desde los tiempos de la NES, pero para muchos,
                         este es el mejor juego de la saga, siendo este el primer juego de la saga en 3D, y
                         siendo un juego que marcó un antes y un después en la historia de los videojuegos.
                     </p>
+                    <button class="review-btn default-btn" id="review-btn">Leer más</button>
+                    <div class="game-review-extra hidden">
+                        <p>En este juego, controlamos a Link, un joven que vive en el bosque Kokiri, y que es el
+                            elegido para salvar a la princesa Zelda de las garras de Ganondorf, el rey de los
+                            Gerudo. Para ello, Link deberá prepararse y obtener la espada maestra para poder 
+                            hacer frente a las adversidades que lo esperan</p>
+                        <button class="review-extra-btn default-btn" id="review-btn-extra">Leer menos</button>
+                    </div>
                 </div>
             </article>
             <!-- Contenido dinámico generado con JS -->
         </section>
     </main>
+    <section class="subscribe-section">
+        <h2>Suscríbete a nuestro boletín</h2>
+        <p>Recibe las últimas noticias y actualizaciones directamente en tu correo electrónico.</p>
+        <form id="subscribe-form">
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+            <button type="submit" class="default-btn">Suscribirse</button>
+        </form>
+    </section>
     <footer>
         <p>&copy; 2023 Blog de Videojuegos</p>
     </footer>
