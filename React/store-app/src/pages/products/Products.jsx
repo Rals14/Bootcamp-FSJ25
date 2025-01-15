@@ -75,9 +75,9 @@ export const Products = () => {
 
 
 
-    useEffect(() => {
-        getProducts()
-    }, [])
+        useEffect(() => {
+            getProducts()
+        }, [])
 
     return (
         <>
